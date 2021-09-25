@@ -44,3 +44,6 @@
 - There are also a few bonuses you can use to boost your shop using `*shop` /`*s`
 - Got bored of the beach? Type `*location` / `*l`  to check out other locations you can move your business to.
 - Don't forget to `*daily` /  `*d` for a **daily bonus**!
+
+**All Commands**
+![help](https://github.com/ContionMig/Sunnie-PY/blob/main/img/help.png?raw=true)
