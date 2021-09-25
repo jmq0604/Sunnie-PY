@@ -45,5 +45,5 @@
 - Got bored of the beach? Type `*location` / `*l`  to check out other locations you can move your business to.
 - Don't forget to `*daily` /  `*d` for a **daily bonus**!
 
-**All Commands**
+# All Commands
 ![help](https://github.com/ContionMig/Sunnie-PY/blob/main/img/help.png?raw=true)
