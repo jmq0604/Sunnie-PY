@@ -1,0 +1,3190 @@
+{
+	"emotes": {
+		"clean": "<:DrainCleaner:865222281088729088>",
+		"inv": "<:inv:871080800169377822>",
+		"tax": "<:tax:870679670604066896>",
+		"owner": ":man_cook:",
+		"company": ":office:",
+		"bank": ":bank:",
+		"red_alert": "<a:redalert:856157220428578816>",
+		"pizza": "<:pizza:856167916997967942>",
+		"pushpin": "<:pushpin:856173646615543849>",
+		"cash": ":moneybag:",
+		"revenue": ":dollar:",
+		"star": ":star:",
+		"level": "<a:7552_Pepe_NitroBoost:856182221689061396>",
+		"vault": "<:26789670removebgpreview:856176226225881098>",
+		"cross": ":x:",
+		"tick": ":white_check_mark:",
+		"book": ":books:",
+		"user": ":busts_in_silhouette:",
+		"a_pizza": "<:pizza:856167916997967942>",
+		"b_pizza": "<:piz:857481677769408542>",
+		"capacity": ":seat:",
+		"cat": "<:8214_PizzaCat:857860410064240651>",
+		"running": ":man_running:",
+		"chart": ":chart_with_upwards_trend:",
+		"xp": "<a:Terraria_GoldCoin:858743169435828255>",
+		"skills": ":trident:",
+		"loading": "<a:loading:864892018500698142>",
+		"daily": ":rocket:",
+		"term": "<:terminal:865109334241050634>",
+		"vote": "<:vote:865110138784186368>",
+		"income": ":moneybag:",
+		"spent": ":money_with_wings:",
+		"work": ":hammer_pick:",
+		"tips": ":alarm_clock:",
+		"gambling": ":game_die:",
+		"interest": ":globe_with_meridians:",
+		"transfer": ":credit_card:",
+		"deposit": ":pound:",
+		"received": ":yen:",
+		"memory": "<:memory:867055862592700426>",
+		"cpu": "<:cpu:867056440396480542>",
+		"disk": "<:disk:867056832169902110>",
+		"server": "<:server:867057343984435200>",
+		"tv": ":tv:"
+	},
+	"banks": {
+		"royal": {
+			"name": "Royal Crown Financial Corp.",
+			"emote": "",
+			"interest": 4,
+			"score_multiplier": 4,
+			"max_multiplier": 5,
+			"price": 30000
+		},
+		"pillar": {
+			"name": "Pillar Holding Company",
+			"emote": "",
+			"interest": 2,
+			"score_multiplier": 4,
+			"max_multiplier": 7,
+			"price": 7500
+		},
+		"wellness": {
+			"name": "Wellness Financial Inc.",
+			"emote": "",
+			"interest": 1,
+			"score_multiplier": 7,
+			"max_multiplier": 7,
+			"price": 2500
+		},
+		"midland": {
+			"name": "Midland Holding Company",
+			"emote": "",
+			"interest": 5,
+			"score_multiplier": 3,
+			"max_multiplier": 4,
+			"price": 75000
+		}
+	},
+	"items": {
+		"daily": {
+			"name": "Daily Boost",
+			"emote": ":rocket:",
+			"item_type": "booster",
+			"description": "A boost obtained by using the daily command!",
+			"price": 10,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": false,
+			"rarity": 0,
+			"extra": {
+				"duration": 43200,
+				"effect": 5,
+				"type": "percentage",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"vote": {
+			"name": "Vote Boost",
+			"emote": "<:vote:865110138784186368>",
+			"item_type": "booster",
+			"description": "A boost obtained by voting for the bot!",
+			"price": 10,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": false,
+			"rarity": 0,
+			"extra": {
+				"duration": 14400,
+				"effect": 20,
+				"type": "percentage",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"smoke": {
+			"name": "Cigarette",
+			"emote": "<:smoke:863388794563723285>",
+			"item_type": "booster",
+			"description": "Emulates real life smoking.",
+			"price": 750,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 50,
+			"extra": {
+				"duration": 7200,
+				"effect": 2,
+				"type": "percentage",
+				"change": "revenue_income",
+				"chance": 30,
+				"fail": ["You smoked it and nothing happened. Wow."]
+			}
+		},
+		"beer": {
+			"name": "Beer",
+			"emote": ":beer:",
+			"item_type": "booster",
+			"description": "Maybe you can give it around?",
+			"price": 1250,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 50,
+			"extra": {
+				"duration": 3600,
+				"effect": 2,
+				"type": "percentage",
+				"change": "revenue_income",
+				"chance": 50,
+				"fail": ["You drank all the beer yourself, you dumbwit"]
+			}
+		},
+		"apple": {
+			"name": "Apple",
+			"emote": ":apple:",
+			"item_type": "booster",
+			"description": "An apple which can be used to improved productivity",
+			"price": 2300,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 100,
+			"extra": {
+				"duration": 28800,
+				"effect": 500,
+				"type": "revenue",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"fortune": {
+			"name": "Fortune Cookie",
+			"emote": ":fortune_cookie:",
+			"item_type": "booster",
+			"description": "A lucky fortune that increases the number of pizzas during work",
+			"price": 10000,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 100,
+			"extra": {
+				"duration": 21600,
+				"effect": 2500,
+				"type": "revenue",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"turtle": {
+			"name": "Lucky Turtle",
+			"emote": ":turtle:",
+			"item_type": "booster",
+			"description": "A lucky turtle charm which increases the chance of getting more revenue",
+			"price": 16000,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 80,
+			"extra": {
+				"duration": 14400,
+				"effect": 6000,
+				"type": "revenue",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"horseshoe": {
+			"name": "Horse Shoe",
+			"emote": "<:horseshow:863389595244953610>",
+			"item_type": "booster",
+			"description": "A lucky horseshoe that increases the number of pizzas during work",
+			"price": 65000,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 80,
+			"extra": {
+				"duration": 86400,
+				"effect": 3500,
+				"type": "revenue",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"charm": {
+			"name": "Lucky Charm",
+			"emote": "<:charm:863390018571993088>",
+			"item_type": "booster",
+			"description": "A lucky horseshoe that increases the number of pizzas during work",
+			"price": 3000,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 80,
+			"extra": {
+				"duration": 14400,
+				"effect": 1000,
+				"type": "revenue",
+				"change": "revenue_income",
+				"chance": 100,
+				"fail": []
+			}
+		},
+		"secret": {
+			"name": "Secret Dough",
+			"emote": "<:secret:863390314244734986>",
+			"item_type": "booster",
+			"description": "Makes your pizzas worth more",
+			"price": 13200,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 50,
+			"extra": {
+				"duration": 14400,
+				"effect": 15,
+				"type": "work",
+				"change": "revenue_income",
+				"chance": 40,
+				"fail": ["Your customers disliked your dough..."]
+			}
+		},
+		"pill": {
+			"name": "Mysterious Pill",
+			"emote": ":pill:",
+			"item_type": "booster",
+			"description": "There is a worn out sticker stating productivity pill?",
+			"price": 16450,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 50,
+			"extra": {
+				"duration": 7200,
+				"effect": 7,
+				"type": "work",
+				"change": "revenue_income",
+				"chance": 20,
+				"fail": ["You feel your pants suddenly increase in size..", "Nothing happened..."]
+			}
+		},
+
+		"lootbox": {
+			"name": "Common Loot Box",
+			"emote": "<:lootbox:857376319632441394>",
+			"item_type": "lootbox",
+			"description": "A box filled with surprises that can be opened",
+			"dev_note": "lootbox given during daily",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 30,
+			"extra": {
+				"open_multiple": true,
+				"rare": 100,
+				"items": 4,
+				"quantity": 3
+			}
+		},
+		"uncommon": {
+			"name": "Uncommon Loot Box",
+			"emote": "<:uncommon:863403665977376779>",
+			"item_type": "lootbox",
+			"description": "An uncommon box filled with surprises that can be opened",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 15,
+			"extra": {
+				"open_multiple": true,
+				"rare": 70,
+				"items": 6,
+				"quantity": 5
+			}
+		},
+		"rare": {
+			"name": "Rare Loot Box",
+			"emote": "<:rare:863403782133907476>",
+			"item_type": "lootbox",
+			"description": "An rare box filled with surprises that can be opened",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 10,
+			"extra": {
+				"open_multiple": true,
+				"rare": 60,
+				"items": 8,
+				"quantity": 7
+			}
+		},
+		"epic": {
+			"name": "Epic Loot Box",
+			"emote": "<:epic:863403928171446273>",
+			"item_type": "lootbox",
+			"description": "An epic box filled with surprises that can be opened",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 10,
+			"extra": {
+				"open_multiple": true,
+				"rare": 50,
+				"items": 10,
+				"quantity": 10
+			}
+		},
+		"mythic": {
+			"name": "Mythic Loot Box",
+			"emote": "<:mythic:863404072433614849>",
+			"item_type": "lootbox",
+			"description": "An epic box filled with surprises that can be opened",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5,
+			"extra": {
+				"open_multiple": true,
+				"rare": 40,
+				"items": 20,
+				"quantity": 15
+			}
+		},
+		"legendary": {
+			"name": "Legendary Loot Box",
+			"emote": "<:legendary:863404594067406849>",
+			"item_type": "lootbox",
+			"description": "An legendary box filled with surprises that can be opened",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 1,
+			"extra": {
+				"open_multiple": true,
+				"rare": 30,
+				"items": 30,
+				"quantity": 30
+			}
+		},
+
+		"banknote": {
+			"name": "Bank Note",
+			"emote": "<:kaash:857293579469717514>",
+			"item_type": "bonus",
+			"description": "Increases your max bank deposit amount",
+			"dev_note": "Increases your max bank deposit amount during daily",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 30,
+			"extra": {
+				"open_multiple": true,
+				"max_deposit": 15000
+			}
+		},
+		"lottery": {
+			"name": "Lottery Ticket",
+			"emote": "<:lottery:863383036496969748>",
+			"item_type": "bonus",
+			"description": "Have a chance to win a fortune.",
+			"price": 20,
+			"in_shop": true,
+			"sell_able": true,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 100,
+			"extra": {
+				"open_multiple": true,
+				"winnings": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,50,65,100]
+			}
+		},
+		"golden": {
+			"name": "Golden Lottery Ticket",
+			"emote": "<:golden:863391507893583883>",
+			"item_type": "bonus",
+			"description": "Huge winning potential",
+			"price": 1000,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 10,
+			"extra": {
+				"open_multiple": true,
+				"winnings": [100, 250, 500, 750, 1000, 2000, 3000, 50000]
+			}
+		},
+		"bag": {
+			"name": "Bag of Money",
+			"emote": ":moneybag:",
+			"item_type": "bonus",
+			"description": "Random bag of money",
+			"price": 1000,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 50,
+			"extra": {
+				"open_multiple": true,
+				"winnings": [100, 200, 500, 2000]
+			}
+		},
+
+		"press": {
+			"name": "Garlic Press",
+			"emote": "<:press:864478008554291200>",
+			"item_type": "sellable",
+			"description": "Press meant to make minced gralic",
+			"price": 7,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"gadget": {
+			"name": "Exercise Gadget",
+			"emote": "<:gadget:864478288696967188>",
+			"item_type": "sellable",
+			"description": "Meant to use for exercise, duh.",
+			"price": 22,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 60
+		},
+		"kcup": {
+			"name": "K-Cups",
+			"emote": "<:kcup:864478510436319263>",
+			"item_type": "sellable",
+			"description": "Small containers to hold stuff in",
+			"price": 40,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 40
+		},
+		"slicer": {
+			"name": "Banana Slicer",
+			"emote": "<:slicer:864478810001637417>",
+			"item_type": "sellable",
+			"description": "Used for cutting bananas",
+			"price": 6,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"sheet": {
+			"name": "Dryer Sheet",
+			"emote": "<:sheet:864479347430653982>",
+			"item_type": "sellable",
+			"description": "Used to wipe stains or to clean",
+			"price": 7,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"vitamin": {
+			"name": "Multivitamin",
+			"emote": "<:vitamin:864479820074450974>",
+			"item_type": "sellable",
+			"description": "Filled with fake promises and herbs",
+			"price": 14,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"cooker": {
+			"name": "Electric Egg Cooker",
+			"emote": "<:cooker:864480146572574741>",
+			"item_type": "sellable",
+			"description": "Used to cook eggs in for people who can't do so",
+			"price": 55,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 60
+		},
+		"cutter": {
+			"name": "Pizza Cutter",
+			"emote": "<:cuter:864482437363269632>",
+			"item_type": "sellable",
+			"description": "Used to slice pizzas into slices",
+			"price": 10,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"zapper": {
+			"name": "Mosquito Zapper",
+			"emote": "<:zapper:864483848858370078>",
+			"item_type": "sellable",
+			"description": "Used to fix mosquito problems",
+			"price": 23,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"repellent": {
+			"name": "Ultrasonic Pest Repellent",
+			"emote": "<:repellent:864484441506316288>",
+			"item_type": "sellable",
+			"description": "Meant to get rid of insects by blasting invisible currents",
+			"price": 25,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 50
+		},
+		"spinner": {
+			"name": "Salad Spinner",
+			"emote": "<:spinner:864484992233898005>",
+			"item_type": "sellable",
+			"description": "Spinning bucket for people who can't make dressing",
+			"price": 30,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 50
+		},
+		"opener": {
+			"name": "Electric Can Opener",
+			"emote": "<:opener:864485344756629554>",
+			"item_type": "sellable",
+			"description": "Used to open cans for people who are weak",
+			"price": 35,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 50
+		},
+		"freshener": {
+			"name": "Air Freshener",
+			"emote": "<:freshener:864486084384784476>",
+			"item_type": "sellable",
+			"description": "Get rid of gross household smells",
+			"price": 17,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"fax": {
+			"name": "Fax Machine",
+			"emote": "<:fax:864486597792628777>",
+			"item_type": "sellable",
+			"description": "Meant to print legal papers",
+			"price": 80,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 30
+		},
+		"robot": {
+			"name": "Robot Vacuum Cleaner",
+			"emote": "<:robot:864488353520943104>",
+			"item_type": "sellable",
+			"description": "Scans the room and attacks dirt",
+			"price": 900,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 10
+		},
+		"bottled": {
+			"name": "Bottled Water",
+			"emote": ":baby_bottle:",
+			"item_type": "sellable",
+			"description": "Literally bottled water, not sure what else to say",
+			"price": 3,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"claw": {
+			"name": "Meat-Shredding Claw",
+			"emote": "<:claw:864488750008238101>",
+			"item_type": "sellable",
+			"description": "Used to shred meat",
+			"price": 25,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"separator": {
+			"name": "Egg Separator",
+			"emote": "<:separator:864489045891481621>",
+			"item_type": "sellable",
+			"description": "Use to separate egg yolk and the white",
+			"price": 5,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"mop": {
+			"name": "Steam Mop",
+			"emote": "<:mop:864489625036914738>",
+			"item_type": "sellable",
+			"description": "Meant to clean floors",
+			"price": 5,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"soap": {
+			"name": "Used Soap",
+			"emote": ":soap:",
+			"item_type": "sellable",
+			"description": "It's self cleaning, but I'd still not use it",
+			"price": 2,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 100
+		},
+		"fan": {
+			"name": "Table Fan",
+			"emote": "<:fan:864490425091752007>",
+			"item_type": "sellable",
+			"description": "Bit noisy tbh if you ask me",
+			"price": 10,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 50
+		},
+		"pooball": {
+			"name": "Poop Ball",
+			"emote": ":balloon:",
+			"item_type": "sellable",
+			"description": "The sport doesn't exist",
+			"price": 2,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 90
+		},
+		"bust": {
+			"name": "Bust of Einstein",
+			"emote": ":electric_plug:",
+			"item_type": "sellable",
+			"description": "Watch out! Might take credit for your ideas!",
+			"price": 7,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 10
+		},
+		"gum": {
+			"name": "Stick of Gum",
+			"emote": "<:gum:864491438149992489>",
+			"item_type": "sellable",
+			"description": "Will attract your friends... and a dog",
+			"price": 5,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 70
+		},
+		"skull": {
+			"name": "Crystal skull",
+			"emote": "<:skull:864495538153586708>",
+			"item_type": "sellable",
+			"description": "Don't look in it's eyes",
+			"price": 30,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 10
+		},
+		"sleeping": {
+			"name": "Sleeping Bag",
+			"emote": "<:sleeping:865218007876501539>",
+			"item_type": "sellable",
+			"description": "You become the meat",
+			"price": 4,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 60
+		},
+		"cheetos": {
+			"name": "Pack of Flaming Hot Cheetos",
+			"emote": "<:cheetos:865218539749507102>",
+			"item_type": "sellable",
+			"description": "Cheetos are seriously intense",
+			"price": 3,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 75
+		},
+		"jerkey": {
+			"name": "Turkey Jerkey",
+			"emote": "<:TurkeyJerkey:865218965184708619>",
+			"item_type": "sellable",
+			"description": "Better than pastry cubes made of sugar and fat",
+			"price": 5,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 80
+		},
+		"plushie": {
+			"name": "Mood plushie",
+			"emote": "<:plushie:865219267540549693>",
+			"item_type": "sellable",
+			"description": "F*ck these annoying things with the ads",
+			"price": 1,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 90
+		},
+		"lipbalm": {
+			"name": "Tunafish Lip Balm",
+			"emote": "<:lipbalm:865219614615011349>",
+			"item_type": "sellable",
+			"description": "Get ready for the best kiss of your life",
+			"price": 8,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 65
+		},
+		"toaster": {
+			"name": "Old toaster",
+			"emote": "<:lipbalm:865219614615011349>",
+			"item_type": "sellable",
+			"description": "Stick a fork in it, no hot-dog slots",
+			"price": 6,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 80
+		},
+		"leash": {
+			"name": "Chicken Harness and Leaash",
+			"emote": "<:leash:865220320083443753>",
+			"item_type": "sellable",
+			"description": "This leash boasts a durable,breathable experience for your cock",
+			"price": 3,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 50
+		},
+		"gnome": {
+			"name": "Garden Gnome",
+			"emote": "<:gnome:865221114157465631>",
+			"item_type": "sellable",
+			"description": "OOOOH OOOOH OOH AHAHAHA",
+			"price": 100,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 10
+		},
+		"karaoke": {
+			"name": "Karaoke Earphones",
+			"emote": "<:karaoke:865221358325989397>",
+			"item_type": "sellable",
+			"description": "You don't wanna listen to yourself... but if you insist",
+			"price": 5,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 70
+		},
+		"croc": {
+			"name": "Crocodile crocs",
+			"emote": "<:croc:865221684083949580>",
+			"item_type": "sellable",
+			"description": "Croc crocs",
+			"price": 2,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 80
+		},
+		"phone": {
+			"name": "Mobile Phone",
+			"emote": "<:MobilePhone:865221955925311530>",
+			"item_type": "sellable",
+			"description": "For when your child uses the dog filter",
+			"price": 20,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 50
+		},
+		"drain": {
+			"name": "Drain Cleaner",
+			"emote": "<:DrainCleaner:865222281088729088>",
+			"item_type": "sellable",
+			"description": "Try drinking it",
+			"price": 10,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 70
+		},
+		"grout": {
+			"name": "Grout cleaner",
+			"emote": "<:Groutcleaner:865222553412698112>",
+			"item_type": "sellable",
+			"description": "Google grout if you don't know what it is",
+			"price": 2,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 70
+		},
+		"inflatables": {
+			"name": "Waving Inflatable Guy",
+			"emote": "<:snow:865222847516114944>",
+			"item_type": "sellable",
+			"description": "Seen dancing outside your house",
+			"price": 50,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 40
+		},
+		"pillow": {
+			"name": "Danny DeVito Sequin Pillow",
+			"emote": "<:body:865223179105861692>",
+			"item_type": "sellable",
+			"description": "Wouldn't sell it if I were you",
+			"price": 1000,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 5
+		},
+		"urinelight": {
+			"name": "Pet Urine Light",
+			"emote": "<:flaeh:865223428067033138>",
+			"item_type": "sellable",
+			"description": "Just a blacklight... Don't flash it around your room",
+			"price": 20,
+			"in_shop": false,
+			"sell_able": true,
+			"use_able": false,
+			"droppable": true,
+			"rarity": 70
+		},
+
+
+		"pokemon": {
+			"name": "Rare Pokemon Card",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "A rare pokemon card",
+			"dev_note": "kolectable bOISSS",
+			"price": 12200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"purple": {
+			"name": "Long Purple Dildo",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Saw someone hitting people in the city with it",
+			"price": 42200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"suit": {
+			"name": "S Symbol Suit",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "I wonder what that 'S' stands for",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"lasagna": {
+			"name": "Lasagna Cat",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "The cat doesn't like tuesday for some reason",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"jphone": {
+			"name": "J-Phone 12",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Comes with 6 cameras instead now. What do they do? We don't know.",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"mousepad": {
+			"name": "Mouse Pad",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Some pad with 2 huge soft things on it?",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"cundam": {
+			"name": "Cundam",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Reminds me of the transformers but more.. fragile?",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"pauldvd": {
+			"name": "Paul Blart Mall Cop DVD",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "It's some fat guy on a scooter, that's funny for some reason",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"cvaccine": {
+			"name": "COVID Vaccine",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Makes you attract forks and coins, a budget iron man",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"blade": {
+			"name": "Blade Shadow Sponsor Contract",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "I think we all know where this is from",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"sisfist": {
+			"name": "Sisfist",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Has red and black strips",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"key": {
+			"name": "Secret Key",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Hmmm. a secret, where have i read it before?",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"crowbar": {
+			"name": "Crowbar",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "It's nice and red and loooooooong. Hard too.",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"hulk": {
+			"name": "Green Man Figure",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "It looks angry for some reason",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"sword": {
+			"name": "Sword",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "It gives you the power to rule over ingland",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"cat": {
+			"name": "Cat",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "No gimmick...just a regular cat",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"parsley": {
+			"name": "Packet of Parsley",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "We call it parsley cuz the FBI might be reading",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"figurine": {
+			"name": "Anime Figurine",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Story says she's 500 years old!",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		},
+		"red": {
+			"name": "Space Man",
+			"emote": "",
+			"item_type": "collectable",
+			"description": "Red space dude who said, Amogus!",
+			"price": 542200,
+			"in_shop": false,
+			"sell_able": false,
+			"use_able": true,
+			"droppable": true,
+			"rarity": 5
+		}
+	},
+	"location": {
+		"beach": {
+			"level": 1,
+			"name": "Beach",
+			"emote": ":beach:",
+			"description": "",
+			"cost": 0,
+			"rent": 0,
+			"max": {
+				"chefs": 2,
+				"cooks": 2,
+				"prep": 2,
+				"dishwasher": 2,
+				"server": 2,
+
+				"bartender": 2,
+				"barback": 2,
+				"sandwich": 2,
+				"catering": 2,
+				"dairy": 2,
+				"taster": 2,
+				"maker": 2,
+				"baker": 2,
+				"decorator": 2
+			}
+		},
+		"local": {
+			"level": 2,
+			"name": "Local Mall",
+			"emote": ":department_store:",
+			"description": "",
+			"cost": 5000,
+			"rent": 1200,
+			"max": {
+				"manager": 2,
+				"chefs": 6,
+				"cooks": 8,
+				"prep": 6,
+				"cashier": 2,
+				"dishwasher": 4,
+				"server": 6,
+
+				"bartender": 4,
+				"barback": 6,
+				"sandwich": 4,
+				"catering": 6,
+				"dairy": 4,
+				"taster": 4,
+				"maker": 6,
+				"baker": 4,
+				"decorator": 6
+			}
+		},
+		"city": {
+			"level": 3,
+			"name": "City Mall",
+			"emote": ":shopping_cart:",
+			"description": "",
+			"cost": 50000,
+			"rent": 3750,
+			"max": {
+				"manager": 6,
+				"chefs": 12,
+				"cooks": 14,
+				"prep": 12,
+				"cashier": 8,
+				"dishwasher": 8,
+				"server": 14,
+				"hosting": 6,
+				"busperson": 6,
+				"advertisers": 3,
+
+				"bartender": 9,
+				"barback": 12,
+				"sandwich": 10,
+				"catering": 14,
+				"dairy": 13,
+				"taster": 9,
+				"maker": 12,
+				"baker": 15,
+				"decorator": 16
+			}
+		},
+		"palace": {
+			"level": 4,
+			"name": "Grand Palace",
+			"emote": ":european_castle:",
+			"description": "Formerly a palace for Kings Rama I through Rama V, and home to Wat Phra Kaew",
+			"cost": 499999,
+			"rent": 12000,
+			"max": {
+				"manager": 12,
+				"chefs": 20,
+				"cooks": 22,
+				"prep": 20,
+				"cashier": 14,
+				"dishwasher": 10,
+				"server": 14,
+				"hosting": 12,
+				"busperson": 12,
+				"advertisers": 8,
+
+				"bartender": 11,
+				"barback": 14,
+				"sandwich": 15,
+				"catering": 19,
+				"dairy": 15,
+				"taster": 13,
+				"maker": 15,
+				"baker": 21,
+				"decorator": 19
+			}
+		},
+		"hollywood": {
+			"level": 5,
+			"name": "Hollywood",
+			"emote": "<:hollywood:856930785315127326>",
+			"description": "The Hollywood sign, which debuted as Hollywoodland in 1923 to advertise a real estate development",
+			"cost": 2300000,
+			"rent": 23000,
+			"max": {
+				"manager": 20,
+				"chefs": 28,
+				"cooks": 30,
+				"prep": 28,
+				"cashier": 20,
+				"dishwasher": 15,
+				"server": 22,
+				"hosting": 20,
+				"busperson": 20,
+				"advertisers": 13,
+
+				"bartender": 13,
+				"barback": 18,
+				"sandwich": 20,
+				"catering": 23,
+				"dairy": 20,
+				"taster": 17,
+				"maker": 19,
+				"baker": 25,
+				"decorator": 25
+			}
+		},
+		"tower": {
+			"level": 6,
+			"name": "Eiffel Tower",
+			"emote": ":tokyo_tower:",
+			"description": "Located in the best place to visit in France, the Eiffel Tower sells about 7 million tickets annually and is appreciated at a distance by all Paris visitors",
+			"cost": 9000000,
+			"rent": 37000,
+			"max": {
+				"manager": 25,
+				"chefs": 35,
+				"cooks": 38,
+				"prep": 35,
+				"cashier": 25,
+				"dishwasher": 20,
+				"server": 30,
+				"hosting": 28,
+				"busperson": 28,
+				"advertisers": 20,
+
+				"bartender": 18,
+				"barback": 25,
+				"sandwich": 28,
+				"catering": 23,
+				"dairy": 28,
+				"taster": 25,
+				"maker": 25,
+				"baker": 28,
+				"decorator": 28
+			}
+		},
+		"pyramid": {
+			"level": 7,
+			"name": "Great Pyramid of Giza",
+			"emote": "<:pyramid:856930791610122331>",
+			"description": "The last of the Seven Wonders of the Ancient World standing, and more than 3,000 years old, the Great Pyramid rises 479 feet from a 754-feet square base",
+			"cost": 15000000,
+			"rent": 60000,
+			"max": {
+				"manager": 32,
+				"chefs": 43,
+				"cooks": 46,
+				"prep": 43,
+				"cashier": 32,
+				"dishwasher": 28,
+				"server": 38,
+				"hosting": 36,
+				"busperson": 36,
+				"advertisers": 30,
+
+				"bartender": 30,
+				"barback": 36,
+				"sandwich": 28,
+				"catering": 30,
+				"dairy": 36,
+				"taster": 38,
+				"maker": 38,
+				"baker": 36,
+				"decorator": 36
+			}
+		},
+		"chinawall": {
+			"level": 8,
+			"name": "Great Wall of China",
+			"emote": ":bricks:",
+			"description": "The Great Wall of China is an ancient series of walls and fortifications, totaling more than 13,000 miles in length",
+			"cost": 12000000,
+			"rent": 75000,
+			"max": {
+				"manager": 40,
+				"chefs": 52,
+				"cooks": 54,
+				"prep": 52,
+				"cashier": 40,
+				"dishwasher": 36,
+				"server": 46,
+				"hosting": 44,
+				"busperson": 44,
+				"advertisers": 42,
+
+				"bartender": 42,
+				"barback": 52,
+				"sandwich": 42,
+				"catering": 52,
+				"dairy": 42,
+				"taster": 42,
+				"maker": 52,
+				"baker": 42,
+				"decorator": 44
+			}
+		},
+		"spacestation": {
+			"level": 9,
+			"name": "Space Station",
+			"emote": ":new_moon:",
+			"description": "",
+			"cost": 8000000000,
+			"rent": 175000,
+			"max": {
+				"manager": 48,
+				"chefs": 60,
+				"cooks": 62,
+				"prep": 60,
+				"cashier": 48,
+				"dishwasher": 44,
+				"server": 54,
+				"hosting": 52,
+				"busperson": 52,
+				"advertisers": 54,
+
+				"bartender": 54,
+				"barback": 60,
+				"sandwich": 54,
+				"catering": 60,
+				"dairy": 54,
+				"taster": 54,
+				"maker": 60,
+				"baker": 54,
+				"decorator": 60
+			}
+		},
+		"mars": {
+			"level": 10,
+			"name": "Mars Colony",
+			"emote": ":ringed_planet:",
+			"description": "",
+			"cost": 16000000000,
+			"rent": 120000,
+			"max": {
+				"manager": 99,
+				"chefs": 99,
+				"cooks": 99,
+				"prep": 99,
+				"cashier": 99,
+				"dishwasher": 99,
+				"server": 99,
+				"hosting": 99,
+				"busperson": 99,
+				"advertisers": 99,
+
+				"bartender": 99,
+				"barback": 99,
+				"sandwich": 99,
+				"catering": 99,
+				"dairy": 99,
+				"taster": 99,
+				"maker": 99,
+				"baker": 99,
+				"decorator": 99
+			}
+		}
+	},
+	"employee": {
+		"manager": {
+			"name": "Manager",
+			"emote": "<:karen:860828851638239232>",
+			"increase": 350,
+			"pizza_increase": 70,
+			"skills": "management",
+			"module": "pizza"
+		},
+		"chefs": {
+			"name": "Head Chef",
+			"emote": "<:pepe_chef:860827953997545482>",
+			"increase": 250,
+			"pizza_increase": 80,
+			"skills": "management",
+			"module": "pizza"
+		},
+		"cooks": {
+			"name": "Cook",
+			"emote": ":cook:",
+			"increase": 200,
+			"pizza_increase": 50,
+			"skills": "cooking",
+			"module": "pizza"
+		},
+		"prep": {
+			"name": "Prep Cook",
+			"emote": "",
+			"increase": 200,
+			"pizza_increase": 50,
+			"skills": "teamwork",
+			"module": "pizza"
+		},
+		"cashier": {
+			"name": "Cashier",
+			"emote": "",
+			"increase": 110,
+			"pizza_increase": 75,
+			"skills": "social",
+			"module": "pizza"
+		},
+		"dishwasher": {
+			"name": "Dish Washer",
+			"emote": "",
+			"increase": 50,
+			"pizza_increase": 30,
+			"skills": "teamwork",
+			"module": "pizza"
+		},
+		"server": {
+			"name": "Server",
+			"emote": "",
+			"increase": 75,
+			"pizza_increase": 45,
+			"skills": "social",
+			"module": "pizza"
+		},
+		"hosting": {
+			"name": "Hosting",
+			"emote": "",
+			"increase": 65,
+			"pizza_increase": 45,
+			"skills": "social",
+			"module": "pizza"
+		},
+		"busperson": {
+			"name": "Busperson",
+			"emote": "",
+			"increase": 55,
+			"pizza_increase": 25,
+			"skills": "social",
+			"module": "pizza"
+		},
+		"advertisers": {
+			"name": "Advertisers",
+			"emote": "",
+			"increase": 350,
+			"pizza_increase": 150,
+			"skills": "marketing",
+			"module": "pizza"
+		},
+
+		"bartender": {
+			"name": "Bartender",
+			"emote": "",
+			"increase": 170,
+			"pizza_increase": 9,
+			"skills": "social",
+			"module": "bar"
+		},
+		"barback": {
+			"name": "Barback",
+			"emote": "",
+			"increase": 70,
+			"pizza_increase": 12,
+			"skills": "management",
+			"module": "bar"
+		},
+
+		"sandwich": {
+			"name": "Sandwich Artist",
+			"emote": "",
+			"increase": 50,
+			"pizza_increase": 18,
+			"skills": "cooking",
+			"module": "sandwich"
+		},
+		"catering": {
+			"name": "Catering Assistant",
+			"emote": "",
+			"increase": 95,
+			"pizza_increase": 12,
+			"skills": "teamwork",
+			"module": "sandwich"
+		},
+
+		"dairy": {
+			"name": "Dairy Farmer",
+			"emote": "",
+			"increase": 460,
+			"pizza_increase": 45,
+			"skills": "management",
+			"module": "icecream"
+		},
+		"taster": {
+			"name": "Ice Cream Taster",
+			"emote": "",
+			"increase": 45,
+			"pizza_increase": 22,
+			"skills": "cooking",
+			"module": "icecream"
+		},
+		"maker": {
+			"name": "Ice Cream Maker",
+			"emote": "",
+			"increase": 250,
+			"pizza_increase": 22,
+			"skills": "cooking",
+			"module": "icecream"
+		},
+
+		"baker": {
+			"name": "Production Bakers",
+			"emote": "",
+			"increase": 350,
+			"pizza_increase": 43,
+			"skills": "cooking",
+			"module": "bakery"
+		},
+		"decorator": {
+			"name": "Cake Decorator",
+			"emote": "",
+			"increase": 55,
+			"pizza_increase": 8,
+			"skills": "management",
+			"module": "bakery"
+		}
+	},
+	"pizza": {
+		"ingredients": {
+			"dough": {
+				"name": "Dough",
+				"emote": "<:dough:858676713792864277>",
+				"price": 1.35,
+				"type": "base"
+			},
+			"rice": {
+				"name": "White Rice",
+				"emote": ":rice:",
+				"price": 2.35,
+				"type": "base"
+			},
+			"flour": {
+				"name": "Flour",
+				"emote": "<:flour:858740805682331679>",
+				"price": 2.35,
+				"type": "base"
+			},
+			"tort": {
+				"name": "Tortilla",
+				"emote": "<:tortmin:858741599081201674>",
+				"price": 2.35,
+				"type": "base"
+			},
+			"rocket": {
+				"name": "Rocket Leaves",
+				"emote": "<:rocket:858742111494209541>",
+				"price": 2.50,
+				"type": "base"
+			},
+			"lettuce": {
+				"name": "Romaine Lettuce",
+				"emote": "<:lettuce:858742449925128202>",
+				"price": 1.50,
+				"type": "base"
+			},
+			"tomato": {
+				"name": "Tomato Sauce/Broth",
+				"emote": "<:tomato:858742823552417813>",
+				"price": 2.50,
+				"type": "sauce"
+			},
+			"honey": {
+				"name": "Honey",
+				"emote": ":honey_pot:",
+				"price": 1.50,
+				"type": "sauce"
+			},
+			"pep": {
+				"name": "Pepperoni",
+				"emote": "<:pep:858746483591086110>",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"saus": {
+				"name": "Sausage",
+				"emote": "<:saus:858746787828334632>",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"beef": {
+				"name": "Minced Beef",
+				"emote": "<:beef:858747156474888193>",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"chicken": {
+				"name": "Chicken",
+				"emote": ":chicken:",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"bacon": {
+				"name": "Bacon",
+				"emote": ":bacon:",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"ham": {
+				"name": "Ham",
+				"emote": "<:download4:858752644985520148>",
+				"price": 2.50,
+				"type": "topping"
+			},
+			"prawn": {
+				"name": "Prawns",
+				"emote": ":fried_shrimp:",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"tuna": {
+				"name": "Tuna",
+				"emote": "<:tuna:858752845107953724>",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"olive": {
+				"name": "Olives",
+				"emote": "<:download2:858752109218234388>",
+				"price": 2.50,
+				"type": "topping"
+			},
+			"mush": {
+				"name": "Mushroom",
+				"emote": ":mushroom:",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"onion": {
+				"name": "Onion",
+				"emote": ":onion:",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"bell": {
+				"name": "Bell Pepper",
+				"emote": "<:download1min2:858751817655910410>",
+				"price": 1.50,
+				"type": "topping"
+			},
+			"eggplant": {
+				"name": "Eggplant",
+				"emote": ":eggplant:",
+				"price": 2.50,
+				"type": "optional"
+			},
+			"bean": {
+				"name": "Black Bean",
+				"emote": "<:bean:858751229655515157>",
+				"price": 3.50,
+				"type": "topping"
+			},
+			"pineapple": {
+				"name": "Pineapple",
+				"emote": ":pineapple:",
+				"price": 3.50,
+				"type": "optional"
+			},
+			"mac": {
+				"name": "Mac & Cheese",
+				"emote": "<:mac:858748063693799436>",
+				"price": 4.50,
+				"type": "optional"
+			},
+			"egg": {
+				"name": "Fried Egg",
+				"emote": "<:egg:858748637115187220>",
+				"price": 3.50,
+				"type": "optional"
+			},
+			"basil": {
+				"name": "Basil",
+				"emote": "<:basil:858753130610556928>",
+				"price": 3.50,
+				"type": "topping"
+			},
+			"kale": {
+				"name": "Kale",
+				"emote": "<:kale:858749470565072917>",
+				"price": 3.50,
+				"type": "optional"
+			},
+			"blue": {
+				"name": "Blue Cheese",
+				"emote": "<:bluec:858753399935598633>",
+				"price": 8.50,
+				"type": "optional"
+			},
+			"cheddar": {
+				"name": "Cheddar",
+				"emote": "<:cheddar:858753695008161823>",
+				"price": 6.50,
+				"type": "cheese"
+			},
+			"feta": {
+				"name": "Feta",
+				"emote": "<:Feta:858753934976876555>",
+				"price": 4.59,
+				"type": "cheese"
+			},
+			"mozz": {
+				"name": "Mozzarella",
+				"emote": "<:mozz:858754551666049074>",
+				"price": 5.40,
+				"type": "cheese"
+			},
+			"parm": {
+				"name": "Parmesan",
+				"emote": "<:parmesan:858753601652523038>",
+				"price": 5.30,
+				"type": "cheese"
+			},
+			"gouda": {
+				"name": "Smoked Gouda",
+				"emote": "<:gouda:858751948165480458>",
+				"price": 12.30,
+				"type": "optional"
+			},
+			"choc": {
+				"name": "Chocolate",
+				"emote": ":chocolate_bar:",
+				"price": 38.40,
+				"type": "optional"
+			},
+			"marsh": {
+				"name": "Marshmallows",
+				"emote": "<:marsh:858750595808755742>",
+				"price": 2.15,
+				"type": "optional"
+			},
+			"cookie": {
+				"name": "Cookies",
+				"emote": ":cookie:",
+				"price": 17.90,
+				"type": "optional"
+			},
+			"banana": {
+				"name": "Bananas",
+				"emote": ":banana:",
+				"price": 3.90,
+				"type": "optional"
+			},
+			"durian": {
+				"name": "Durian",
+				"emote": "<:durian:858750015471747082>",
+				"price": 10,
+				"type": "optional"
+			},
+			"tikka": {
+				"name": "Chicken Tikka",
+				"emote": "<:ChickenTikka:858751099820048394>",
+				"price": 93.90,
+				"type": "optional"
+			},
+			"squid": {
+				"name": "Squid Ink",
+				"emote": "<:squidink:858749762941878292>",
+				"price": 93.90,
+				"type": "optional"
+			},
+			"crab": {
+				"name": "Crab",
+				"emote": ":crab:",
+				"price": 93.90,
+				"type": "optional"
+			},
+			"gold": {
+				"name": "Edible Gold",
+				"emote": "<:gold:858745242886078465>",
+				"price": 93.90,
+				"type": "optional"
+			}
+		},
+		"types": {
+			"pepperoni": {
+				"name": "Pepperoni Pizza",
+				"emote": ":pizza:",
+				"price": 49.90,
+				"ingredients": ["dough", "tomato", "mozz", "pep"]
+			},
+			"burrito": {
+				"name": "Beef Burrito",
+				"emote": ":burrito:",
+				"price": 18.13,
+				"ingredients": ["tort", "beef", "onion", "cheddar", "bean"]
+			},
+			"sausage": {
+				"name": "Sausage Pizza",
+				"emote": "<:Sausage:857991222386753546>",
+				"price": 27.20,
+				"ingredients": ["dough", "tomato", "mozz", "saus"]
+			},
+			"fried": {
+				"name": "Fried Chicken",
+				"emote": ":poultry_leg:",
+				"price": 5.90,
+				"ingredients": ["chic", "flour", "honey"]
+			},
+			"hawaiian": {
+				"name": "Hawaiian Pizza",
+				"emote": "<:hawaiian:857991500810027028>",
+				"price": 35.23,
+				"ingredients": ["dough", "tomato", "mozz", "ham", "bacon"]
+			},
+			"seafood": {
+				"name": "Seafood Delight Pizza",
+				"emote": "<:pizzahut:857990280883863562>",
+				"price": 39.20,
+				"ingredients": ["dough", "tomato", "mozz", "tuna", "prawn"]
+			},
+			"sandwich": {
+				"name": "Sandwich",
+				"emote": ":sandwich:",
+				"price": 6.90,
+				"ingredients": ["dough", "tomato", "cheddar", "ham"]
+			},
+			"veg": {
+				"name": "Vegetarian Pizza",
+				"emote": "<:vegetarian:857990757864570900>",
+				"price": 32.90,
+				"ingredients": ["dough", "tomato", "mozz", "mush", "onion"]
+			},
+			"tamale": {
+				"name": "Tamale",
+				"emote": ":tamale:",
+				"price": 14.90,
+				"ingredients": ["dough", "chic", "beef", "mozz", "bean"]
+			},
+			"vegan": {
+				"name": "Vegan Pizza",
+				"emote": "<:vegan:857989803176886282>",
+				"price": 35.20,
+				"ingredients": ["dough", "tomato", "mush", "onion", "eggplant"]
+			},
+			"taco": {
+				"name": "Taco",
+				"emote": ":taco:",
+				"price": 12.90,
+				"ingredients": ["tort", "beef", "cheddar", "onion"]
+			},
+			"hotdog": {
+				"name": "Hot Dog Bun",
+				"emote": ":hotdog:",
+				"price": 4.20,
+				"ingredients": ["dough", "cheddar", "saus"]
+			},
+			"salad": {
+				"name": "Salad",
+				"emote": ":salad:",
+				"price": 12.20,
+				"ingredients": ["ro", "rocket", "feta", "chic", "olive"]
+			},
+			"pita": {
+				"name": "Stuffed Pita",
+				"emote": ":stuffed_flatbread:",
+				"price": 7.20,
+				"ingredients": ["tort", "chic", "onion", "bean"]
+			},
+			"pie": {
+				"name": "Cheese Pie",
+				"emote": ":pie:",
+				"price": 15.20,
+				"ingredients": ["dough", "mozz", "cheddar", "parm", "feta"]
+			},
+			"pancake": {
+				"name": "Pancakes",
+				"emote": ":pancakes:",
+				"price": 13.20,
+				"ingredients": ["flour", "honey", "choc"]
+			},
+			"hotpot": {
+				"name": "Hot Pot",
+				"emote": ":shallow_pan_of_food:",
+				"price": 53.20,
+				"ingredients": ["tomato", "beef", "prawn", "ro", "mush"]
+			},
+			"sushi": {
+				"name": "Sushi",
+				"emote": ":sushi:",
+				"price": 34.20,
+				"ingredients": ["rice", "tuna", "prawn"]
+			},
+			"pasta": {
+				"name": "Beef Pasta",
+				"emote": ":spaghetti:",
+				"price": 9.20,
+				"ingredients": ["dough", "tomato", "cheddar", "beef", "onion"]
+			}
+		},
+		"comments": [
+			"May I have **{o}** on those? {re}",
+			"I want to add a **{o}** to my pizzas please. {re}",
+			"Extra **{o}** for my pies please! {re}",
+			"{re} Can I also add **{o}** on my pizzas?",
+			"{re} Oh add **{o}** too!"
+		],
+		"extra_comments": [
+			"Also, can you hurry it up please?",
+			"Please make it quick, I have a football match to catch!",
+			"FYI my family and I are starving, chopchop!!",
+			"Plus, make it fast! You're the flash right? Just vibrate faster?!",
+			"Anyways, I came here all the way from russia, can you hurry the heck up?",
+			"Besides, it has been years since I had pizza from the WWI, I want some pizza now!",
+			"Other than that, it was tiring running away from Hitler, I need some pizza to fuel me up!",
+			"Just finished my gym session! I want my pizzas on the double!!",
+			"Make it quick!",
+			"I want it fast!",
+			"Anyways, just gave birth to the sUn, I'm famished! Pizzas ASAP!!",
+			"Are you into more meat products or vegetables? I myself enjoy vegetables more, plus it's healthy."
+		]
+	},
+	"commands": {
+		"emotes": {
+			"cooldown": [
+				"<:bakabaka:857283652823678987>",
+				"<a:anGErWEEE:857283686051086356>",
+				"<:bAm:857283904510361610>",
+				"<:hmph:857283563253792819>",
+				"<:angrwee:857283665113120808>",
+				"<:shush:857282981060411412>",
+				"<:sAyAgAIN:857283078815875104>",
+				"<:angeREEEE:857283711925223444>"
+			],
+			"format": [
+				"<:bakabaka:857283652823678987>",
+				"<a:anGErWEEE:857283686051086356>",
+				"<:bAm:857283904510361610>",
+				"<:hmph:857283563253792819>",
+				"<:angrwee:857283665113120808>",
+				"<:sAyAgAIN:857283078815875104>",
+				"<:angeREEEE:857283711925223444>"
+			],
+			"work": [
+				"<a:yAYYAYA:857291960569167883>",
+				"<a:yAY:857291817967943710>",
+				"<:smoling:857293035493392384>",
+				"<:remYeah:857292979039764491>",
+				"<:ramYeah:857292959414353973>",
+				"<:pEtTinG:857293068159680519>",
+				"<a:pATPATPAT:857293212950593556>",
+				"<a:hYPEd:857292337062346815>",
+				"<:kannaPat:857293240877449237>",
+				"<:miyanoYeah:857292904909373450>",
+				"<a:nezukoyeah:857292377524797460>",
+				"<:owoXD:857293169548722177>",
+				"<:Cenzuoyeah:857292281945653298>",
+				"<:AquaYeah:857292255122423809>"
+			]
+		},
+		"comment": {
+			"cooldown": [
+				"Please slow down! You can use {cmd} again in **{t}**. {e}",
+				"Slow the heck down man, you got **{t}** left. {e}",
+				"Chill the heck down! You have **{t}** left! {e}",
+				"You can use {cmd} again in **{t}**! Stop spamming! {e}",
+				"Stop spamming you arse! You have **{t}** left! {e}",
+				"Calm down! Use {cmd} in **{t}**! {e}",
+				"Use {cmd} in **{t}** again, chill! {e}",
+				"Bruh calm down! Do {cmd} in **{t}** again, okay? {e}",
+				"Yo do {cmd} in **{t}**! You have all the time in the world, calm down! {e}",
+				"Chill, **{t}** left! {e}"
+			],
+			"format": [
+				"{e} Use: `{help}`",
+				"That's not the right format dummy! `{help}` {e}",
+				"Idiot! Key in the correct sequence! `{help}` {e}",
+				"Jesus Christ! Use the right format! `{help}` {e}",
+				"Jesus! Could you use the right format? `{help}` {e}",
+				"It's `{help}` dummy! Sigh {e}",
+				"Is this your first time?? It's `{help}`! {e}"
+			],
+			"bad_work": [
+				"Take that stick out of your ass and read up on the recipes, `{p}recipe` next time! You earned :dollar: `${c}` and sold :fork_knife_plate: `${t}`"
+			],
+			"decent_work": [
+				"Pretty decent work, we earned a total of :dollar: `${c}` and sold a total of :fork_knife_plate: `{t}` items. Try to brush up on your recipes abit more"
+			],
+			"great_work": [
+				"You earned a total of :dollar: `${c}` by selling a total of :fork_knife_plate: `{t}` items, keep it up! Do slightly **better** next time to earn a **bonus**!"
+			]
+		},
+		"beg": {
+				"Emeril Lagasse": {
+					"quotes": [
+						"A lot of parents ask me how to get kids to eat more vegetables. The first thing I say is that it starts from the top.",
+						"Food is very representative of a city's culture. In order to really get to know a place and the people, you've got to eat the food.",
+						"Life just doesn't hand you things. You have to get out there and make things happen. that's the exciting part.",
+						"If you don't follow your dream, who will?",
+						"Food that's beautiful to look at seems to taste better than food that isn't.",
+						"It's okay to play with your food.",
+						"Cooking is so popular today because it's the perfect mix of food and fun.",
+						"I think you've got to keep it simple, keep it fresh. Stay away from all that processed stuff, read the labels.",
+						"If kids can learn how to make a simple Bolognese sauce, they will never go hungry. It's pretty easy to cook pasta, but a good sauce is way more useful.",
+						"What I go for in my cooking is sinful, bold and real."
+					]
+				},
+				"Tom Colicchio": {
+					"quotes": [
+						"Recipes tell you nothing. Learning techniques is the key.",
+						"I think the most effective way to run a kitchen is to teach, not to just yell.",
+						"Every chef should have an understanding of pastries or desserts.",
+						"I know from personal experience, if a chef yelled at me in a kitchen, the first thing I'd want to do is hit them with a pot.",
+						"Once you have your basics down, you can start breaking the rules.",
+						"In an ideal world for me, school lunch would be free for everybody.",
+						"People are not hungry because we dont produce enough. People are hungry for political reasons.",
+						"Men with shaved heads are always better. Just ask my wife."
+					]
+				},
+				"Wolfgang Puck": {
+					"quotes": [
+						"When you have made as many mistakes as I have, then you can be as good as me.",
+						"Only you can judge your life. You have to live up to your own expectations.",
+						"For me, cooking is an expression of the land where you are and the culture of that place.",
+						"A chef is a mixture maybe of artistry and craft. You have to learn the craft really to get there.",
+						"The only way to teach people how to truly do it and do it the right way, is to get those ingredients and kitchen tools in front of them and in their hands to use.",
+						"I learn more from the one restaurant that didn't work than from all the ones that were successes.",
+						"A good chef has to be a manager, a businessman and a great cook. To marry all three together is sometimes difficult.",
+						"You can eat an omelet at midnight, at lunchtime, all day long. It's perfect for every occasion.",
+						"Most seasonings are based on family tradition."
+					]
+				},
+				"Gordon Ramsay": {
+					"quotes": [
+						"My gran could do better! And she's dead!",
+						"For what we are about to eat, may the Lord make us truly not vomit.",
+						"You're getting your knickers in a twist! Calm down!",
+						"This lamb is so undercooked, it's following Mary to school!",
+						"This pizza is so disgusting, if you take it to Italy you'll get arrested.",
+						"There's enough garlic in here to kill every vampire in Europe.",
+						"This is a really tough decision... cause you're both crap."
+					]
+				}
+		},
+		"search": {
+			"mixer": {
+				"win": [
+					"You meet a nice girl and got married, her parents than gave you {p} as a gift"
+				],
+				"lost": [
+					"You thought you met a nice girl but your friend points out her adams apple",
+					"You thought you met your love of your life, till someone points out the bulge in her pants"
+				],
+				"die": [
+					"You met a loose woman, did the deed, and got an STD. Your PP falls off and you died. She than stole {p} from you"
+				]
+			},
+			"park": {
+				"win": [
+					"You met a nice granny and she gave you her will, earning you {p}"
+				],
+				"lost": [
+					"You got hit in the head by a ball and lost some IQ"
+				],
+				"die": [
+					"The granny was the old bitch from snow white and you ate her apple....you died and lost {p}",
+					"A dog in the park was furiously chasing you down, and you got bitten to death, losing {p}"
+				]
+			},
+			"skydiving": {
+				"win": [
+					"You managed to have quite a bit of fun and managed to sell some pizzas, granting you {p}"
+				],
+				"lost": [
+					"They kick you out cuz you are fat as fuck, lose some weight man"
+				],
+				"die": [
+					"I think we know what happens here...your parachute didn't open and you managed to hit the water. You survived, but a shark ate you and you lost {p}"
+				]
+			},
+			"graveyard": {
+				"win": [
+					"You somehow managed to dig into someone who was rich and found {p}"
+				],
+				"lost": [
+					"You managed to somehow dig into your mom's graveyard. You got sad and went home"
+				],
+				"die": [
+					"A ghost found you and started chasing you, you decided to kill yourself thinking you could fight the ghost in the afterlife....there was no afterlife and you lost {p}"
+				]
+			},
+			"school": {
+				"win": [
+					"You have a fun experience and make some sales as well, granting you {p}"
+				],
+				"lost": [
+					"You see your school bully working there as a janitor, he than beats you up"
+				],
+				"die": [
+					"A ghost chases you around the school, you accidentally fell and hit your head. The ghost stole {p}, next time don't run in the halls"
+				]
+			},
+			"beach": {
+				"win": [
+					"You started digging a hole in the sand and managed to find {p}"
+				],
+				"lost": [
+					"You started digging a hole in the sand and managed to find a dead body...noice"
+				],
+				"die": [
+					"You saw a mermaid in a distance and tried to swim to it forgetting you couldn't swim losing {p} and died"
+				]
+			},
+			"church": {
+				"win": [
+					"You eat the holy cracker and stole {p} from the tips jar",
+					"You found some holy water i  the church hall, drank it, saw Jesus and he gave you {p}"
+				],
+				"lost": [
+					"Father asks you for a donation and due to your social anxiety, you joined the army. yep."
+				],
+				"die": [
+					"You accidentally insulted their faith, the church grabs you and hanged you on across. Oh ye, they donated your {p} to themselves as well"
+				]
+			},
+			"mall": {
+				"win": [
+					"You manage to steal all their item and sold it at a yard sale for {p}"
+				],
+				"lost": [
+					"You tried to steal a TV like a dumbass and got caught. Thankfully you didn't even make it out of the store."
+				],
+				"die": [
+					"You leg gets stuck in the escalator grinding you into a human flesh....oh ye and it also grinded your {p}"
+				]
+			},
+			"household": {
+				"win": [
+					"You fed them food and they surprisingly liked it, giving you {p} for your services"
+				],
+				"lost": [
+					"They didn't like your shitty pizza and kicked you to a curb. They didn't pay for the pizza either"
+				],
+				"die": [
+					"Sike it ain't a normal household, the mafia kills you and took {p}"
+				]
+			},
+			"mountain": {
+				"win": [
+					"You met a group of hungry junkies and stole {p} from them"
+				],
+				"lost": [
+					"Crackheads got mad and discovered where you were and you got beaten up"
+				],
+				"die": [
+					"A lion fucking ate you....jesus what a mess, oh ye, and you lost {p}"
+				]
+			},
+			"taco stand": {
+				"win": [
+					"You get a free taco and {p}"
+				],
+				"lost": [
+					"you got dysentry, luckily you didn't die"
+				],
+				"die": [
+					"The mexicans made you their drug mule, you got busted and die in a standoff. They then robbed you for {p}"
+				]
+			},
+			"pizzeria": {
+				"win": [
+					"You get a small gift, {p}, for being so famous"
+				],
+				"lost": [
+					"You got kicked from the pizzeria, jesus you suck"
+				],
+				"die": [
+					"They look at you as a rival and feed you poisoned pizza, you died and lost {p}"
+				]
+			},
+			"casino": {
+				"win": [
+					"you manage to win {p}"
+				],
+				"lost": [
+					"You lost some money, you somehow didn't make a lose."
+				],
+				"die": [
+					"You managed to tangle yourself with the mafia and get killed. You lost {p} during the process"
+				]
+			},
+			"alley": {
+				"win": [
+					"you find some {p} and took it"
+				],
+				"lost": [
+					"ah sheet, you got robbed. Luckily the robber was as dumb as you and took nothing"
+				],
+				"die": [
+					"You got stabbed. You lost {p} good job kiddo"
+				]
+			},
+			"bank": {
+				"win": [
+					"You found {p} in the bank. Wait a minute, did you just rob a fucking bank?",
+					"WTF, you just robbed a focking bank and found {p}"
+				],
+				"lost": [
+					"You didn't find shit, what did you expect, it's a bank.",
+					"The guards escorted you out...it's a bank my dude."
+				],
+				"die": [
+					"The guard got suspicious and decided to shoot you...yep, you lost {p}",
+					"You tried to a rob a bank and died. Hey, at least you got to be in the news... you lost {p}"
+				]
+			},
+			"pot": {
+				"win": [
+					"I am not sure why {p} was just laying there, but you kept it",
+					"You managed to find {p} which appeared from thin air into the pot. Thanks wizard"
+				],
+				"lost": [
+					"It'a a pot...for cooking. What do you want to find in there?",
+					"People started staring wile you took a look at an empty pot. Shame..."
+				],
+				"die": [
+					"You, being dumb, tried to put your hand in a hot pot, burning your hand and you lost {p}",
+					"You somehow managed to fall and hit your head on the pot, resulting in brain damage and you lost {p}"
+				]
+			},
+			"kitchen": {
+				"win": [
+					"Aside from all the dead rat, you manage to find {p}, pat yourself in the back",
+					"You managed to find {p} covered in dead rats and cockroaches. Well done, hope it was worth it"
+				],
+				"lost": [
+					"One of the cooks saw you and kicked you out. Next time don't go in during the day",
+					"You managed to be spotted and decided to NOT go in... like a smart person"
+				],
+				"die": [
+					"The head chef saw you and busted you nuts. Aside from the lost nut, you also lost {p}",
+					"You somehow managed to lock yourself in the fridge. You died from the cold and lost {p}"
+				]
+			}
+		}
+	},
+	"upgrades": {
+		"oven": {
+			"name": "Ovens",
+			"emote": "<:oven:857896787137527860>",
+			"info": "Unlocks a new pizza",
+			"cost": 5000,
+			"multiplier": 4,
+			"effects": 1,
+			"format": "{e} food item",
+			"upscale": false,
+			"module": "pizza"
+		},
+		"storage": {
+			"name": "Pantry Expansion",
+			"emote": "<:fridge:858755375805366282>",
+			"info": "Increases storage space",
+			"cost": 7500,
+			"multiplier": 2,
+			"effects": 20,
+			"format": "+{e} space",
+			"upscale": true,
+			"module": "pizza"
+		},
+		"furniture": {
+			"name": "Tables & Chairs",
+			"emote": ":chair:",
+			"info": "Increases capacity",
+			"cost": 2500,
+			"multiplier": 2,
+			"effects": 5,
+			"format": "+{e} cap",
+			"upscale": true,
+			"module": "pizza"
+		},
+		"tip": {
+			"name": "Tip Jar",
+			"emote": "<:tipjarmin1:857878142487494686>",
+			"info": "Increases tips amount",
+			"cost": 150,
+			"multiplier": 2,
+			"effects": 2,
+			"format": "+{e}%",
+			"upscale": true,
+			"module": "pizza",
+			"increase": "normal"
+		},
+		"worktime": {
+			"name": "Fortune Cat",
+			"emote": "<:fortunecat:857859554897428500>",
+			"info": "Increases work time limit",
+			"cost": 10000,
+			"multiplier": 2,
+			"effects": 1,
+			"format": "+{e} second",
+			"upscale": false,
+			"module": "pizza",
+			"increase": "normal"
+		},
+		"tipstime": {
+			"name": "Fancy Pizza Boxes",
+			"emote": ":package:",
+			"info": "Increases tips time limit",
+			"cost": 10000,
+			"multiplier": 2,
+			"effects": 1,
+			"format": "+{e} second",
+			"upscale": false,
+			"module": "pizza",
+			"increase": "normal"
+		},
+		"stool": {
+			"name": "Bar Stool",
+			"emote": "<:stool:860819067103739944>",
+			"info": "Increases capacity of your bar",
+			"cost": 10500,
+			"multiplier": 4,
+			"effects": 2,
+			"format": "+{e} cap",
+			"upscale": true,
+			"module": "bar",
+			"increase": "capacity"
+		},
+		"grill": {
+			"name": "Sandwich Grill",
+			"emote": "<:grill:860819308657639434>",
+			"info": "Increases capacity of your sandwich corner",
+			"cost": 5000,
+			"multiplier": 5,
+			"effects": 4,
+			"format": "+{e} cap",
+			"upscale": true,
+			"module": "sandwich",
+			"increase": "capacity"
+		},
+		"gelato": {
+			"name": "Gelato Machines",
+			"emote": "<:gelato:860813404587687946>",
+			"info": "Increases capacity of your Ice Cream Parlor",
+			"cost": 12000,
+			"multiplier": 4.5,
+			"effects": 5,
+			"format": "+{e} cap",
+			"upscale": true,
+			"module": "icecream",
+			"increase": "capacity"
+		},
+		"rotary": {
+			"name": " Rotary Moulder",
+			"emote": "<:rotary:860813607163265045>",
+			"info": "Increases capacity of your Bakery",
+			"cost": 14000,
+			"multiplier": 2.5,
+			"effects": 4,
+			"format": "+{e} cap",
+			"upscale": true,
+			"module": "bakery",
+			"increase": "capacity"
+		}
+	},
+	"modules": {
+		"bar": {
+			"name": "Bar",
+			"emote": ":cocktail:",
+			"cost": 420000,
+			"revenue": 250,
+			"capacity": 5,
+			"item": {
+				"barleywine": {
+					"name": "Barleywine",
+					"emote": "<:Barleywine:860436016685645824>",
+					"price": 13.90
+				},
+				"firestone": {
+					"name": "Firestone Sucaba",
+					"emote": "<:FirestoneSucaba1:860436335209873418>",
+					"price": 23.90
+				},
+				"budweiser": {
+					"name": "Budweiser",
+					"emote": "<:Budweiser:860436559672901632>",
+					"price": 17.04
+				},
+				"lagunitas": {
+					"name": "Lagunitas IPA",
+					"emote": "<:LagunitasIPA:860437024195739659>",
+					"price": 18.99
+				},
+				"dos": {
+					"name": "Dos Equis",
+					"emote": "<:DosEquis:860437472223428639>",
+					"price": 17.59
+				},
+				"fireball": {
+					"name": "Fireball Cinnamon Whisky",
+					"emote": "<:fireball:860438066455511042>",
+					"price": 29.69
+				},
+				"smirnoff": {
+					"name": "Smirnoff Pink Lemonade",
+					"emote": "<:smirnoff:860438301315825665>",
+					"price": 13.84
+				},
+				"blanco": {
+					"name": "Espolòn Tequila Blanco",
+					"emote": "<:blanco:860438543875702784>",
+					"price": 32.39
+				},
+				"bacardi": {
+					"name": "Superior White Rum",
+					"emote": "<:bacardi:860438731709218826>",
+					"price": 59.49
+				},
+				"handmade": {
+					"name": "Handmade Vodka",
+					"emote": "<:handmade:860439022450245652>",
+					"price": 35.79
+				},
+				"silver": {
+					"name": "Silver Tequila",
+					"emote": "<:silver:860439305691201577>",
+					"price": 101.30
+				},
+				"tequila": {
+					"name": "Hornitos Reposado Tequila",
+					"emote": "<:tequila:860439536010002472>",
+					"price": 31.99
+				},
+				"julio": {
+					"name": "Don Julio Blanco",
+					"emote": "<:julio:860439755376033802>",
+					"price": 51.99
+				},
+				"gin": {
+					"name": "Hendrick's Gin",
+					"emote": "<:gin:860439904776355840>",
+					"price": 47.99
+				},
+				"dry": {
+					"name": "Beefeater London Dry Gin",
+					"emote": "<:dry:860440128928612402>",
+					"price": 37.99
+				}
+			}
+		},
+		"sandwich": {
+			"name": "Sandwich Corner",
+			"emote": ":sandwich:",
+			"cost": 150000,
+			"revenue": 120,
+			"capacity": 10,
+			"item": {
+				"rueben": {
+					"name": "Rueben Sandwich",
+					"emote": "<:rueben:860448712551170068>",
+					"price": 4
+				},
+				"croque": {
+					"name": "Croque-Monsieur",
+					"emote": "<:croque:860449154597388298>",
+					"price": 4.95
+				},
+				"pbj": {
+					"name": "Peanut Butter and Jelly",
+					"emote": "<:pbj:860449783771955250>",
+					"price": 2.75
+				},
+				"cheesesteak": {
+					"name": "Philly Cheesesteak",
+					"emote": "<:cheesesteak:860450076068413441>",
+					"price": 5.89
+				},
+				"shawarma": {
+					"name": "Shawarma",
+					"emote": "<:shawarma:860450590109990942>",
+					"price": 6.99
+				},
+				"doner": {
+					"name": "Doner Kebab",
+					"emote": "",
+					"price": 2.50
+				},
+				"eggsalad": {
+					"name": "Egg Salad Sandwich",
+					"emote": "",
+					"price": 2
+				},
+				"vadapav": {
+					"name": "Vadapav",
+					"emote": "",
+					"price": 1.5
+				}
+			}
+		},
+		"icecream": {
+			"name": "Ice Cream Parlor",
+			"emote": ":ice_cream:",
+			"cost": 550000,
+			"revenue": 90,
+			"capacity": 20,
+			"item": {
+				"vanilla": {
+					"name": "Vanilla",
+					"emote": "",
+					"price": 1.99
+				},
+				"chocolate": {
+					"name": "Chocolate",
+					"emote": "",
+					"price": 1.99
+				},
+				"c&c": {
+					"name": "Cookies & Cream",
+					"emote": "",
+					"price": 3.29
+				},
+				"mint": {
+					"name": "Mint Chocolate Chip",
+					"emote": "",
+					"price": 3.39
+				},
+				"dough": {
+					"name": "Chocolate Chip Cookie",
+					"emote": "",
+					"price": 3.99
+				},
+				"pecan": {
+					"name": "Buttered Pecan",
+					"emote": "",
+					"price": 3.69
+				},
+				"strawberry": {
+					"name": "Strawberry",
+					"emote": ":strawberry:",
+					"price": 1.99
+				},
+				"moose": {
+					"name": "Moose tracks",
+					"emote": "",
+					"price": 3.29
+				}
+			}
+		},
+		"bakery": {
+			"name": "Bakery",
+			"emote": ":cake:",
+			"cost": 550000,
+			"revenue": 210,
+			"capacity": 7,
+			"item": {
+				"brioche": {
+					"name": "Brioche",
+					"emote": "",
+					"price": 3.98
+				},
+				"cornbread": {
+					"name": "Cornbread",
+					"emote": "",
+					"price": 3.98
+				},
+				"focaccia": {
+					"name": "Foccacia",
+					"emote": "",
+					"price": 4.87
+				},
+				"pita": {
+					"name": "Pita",
+					"emote": "",
+					"price": 2.99
+				},
+				"multigrain": {
+					"name": "Multigrain",
+					"emote": "",
+					"price": 2.50
+				},
+				"pumpernickel": {
+					"name": "Pumpernickel",
+					"emote": "",
+					"price": 3.59
+				},
+				"rye": {
+					"name": "Rye",
+					"emote": "",
+					"price": 5.39
+				},
+				"sourdough": {
+					"name": "Sourdough",
+					"emote": "",
+					"price": 3.68
+				}
+			}
+		}
+	},
+	"minigame": {
+		"phase": {
+			"phases": [
+				"food is ready",
+				"serving the best food around",
+				"our food is ready",
+				"come here"
+			]
+		},
+		"trivia": {
+			"questions": [
+				{
+					"question": "Which Is The Most Expensive Spice In The World By Weight?",
+					"choices": [
+						"`a)` Cardamom",
+						"`b)` Vanilla Pods",
+						"`c)` Saffron"
+					],
+					"correct": "c"
+				},
+				{
+					"question": "Which Asian Fruit Has The Nickname 'King Of Fruits' And Is Known For Its Distinctive Smell?",
+					"choices": [
+						"`a)` Jackfruit",
+						"`b)` Durian",
+						"`c)` Stinky Tofu"
+					],
+					"correct": "b"
+				},
+				{
+					"question": "What fast food restaurant is credited with introducing the first modern-day drive-thru window?",
+					"choices": [
+						"`a)` McDonald's",
+						"`b)` A&W",
+						"`c)` TacoBell"
+					],
+					"correct": "b"
+				},
+				{
+					"question": "What fast food restaurants was founded first?",
+					"choices": [
+						"`a)` McDonald's",
+						"`b)` Dunkin' Donuts",
+						"`c)` In-N-Out Burger"
+					],
+					"correct": "c"
+				},
+				{
+					"question": "What did McDonald's restaurants first introduce in 1968?",
+					"choices": [
+						"`a)` The Big Mac",
+						"`b)` Cheeseburger",
+						"`c)` Filet-O-Fish"
+					],
+					"correct": "a"
+				},
+				{
+					"question": "When did McDonald's introduce Ronald McDonald?",
+					"choices": [
+						"`a)` 1955",
+						"`b)` 1963",
+						"`c)` 1972"
+					],
+					"correct": "b"
+				},
+				{
+					"question": "Where was the first Pizza Hut built?",
+					"choices": [
+						"`a)` 1960",
+						"`b)` San Bernardino, California",
+						"`c)` Wichita, Kansas"
+					],
+					"correct": "c"
+				},
+				{
+					"question": "What fast food restaurant boasts that you can 'Have it your way'?",
+					"choices": [
+						"`a)` Burger King",
+						"`b)` 1963",
+						"`c)` Wichita, Kansas"
+					],
+					"correct": "a"
+				},
+				{
+					"question": "What fast food restaurant aired ads featuring a man who lost 245 pounds eating only their products?",
+					"choices": [
+						"`a)` Sumo Salad",
+						"`b)` Subway",
+						"`c)` Nature's Glory"
+					],
+					"correct": "b"
+				},
+				{
+					"question": "Which fast food restaurant is famous for its curly fries and jamocha shakes?",
+					"choices": [
+						"`a)` A&W",
+						"`b)` Five Guys",
+						"`c)` Arby's"
+					],
+					"correct": "c"
+				},
+				{
+					"question": "What sub shop is known for its toasted subs?",
+					"choices": [
+						"`a)` Quiznos",
+						"`b)` Subway",
+						"`c)` Jimmy John's Gourmet Sandwiches"
+					],
+					"correct": "a"
+				},
+				{
+					"question": "Which is the first fast food restaurant in China?",
+					"choices": [
+						"`a)` McDonald's",
+						"`b)` Kentucky Fried Chicken",
+						"`c)` Panda Express"
+					],
+					"correct": "b"
+				},
+				{
+					"question": "The Famous Star is the signature burger of which fast food restaurant?",
+					"choices": [
+						"`a)` Five Star Burger",
+						"`b)` Fatburger",
+						"`c)` Carl's Jr."
+					],
+					"correct": "c"
+				},
+				{
+					"question": "What year did the first Taco Bell open?",
+					"choices": [
+						"`a)` 1962",
+						"`b)` 1984",
+						"`c)` 1965"
+					],
+					"correct": "a"
+				},
+				{
+					"question": "What mid 1980's McDonald's item came in a double container?",
+					"choices": [
+						"`a)` McRib",
+						"`b)` The McD.L.T.",
+						"`c)` Hotcakes and sausage"
+					],
+					"correct": "b"
+				},
+				{
+                    "question": "What iconic meal did McDonald's introduce in 1968?",
+                    "choices": [
+                        "`a)` Big Whopper",
+                        "`b)` Big Mac",
+                        "`c)` Quarter Pounder"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "question": "How many herbs and spices are in Colonel Harland Sanders' original KFC recipe?",
+                    "choices": [
+                        "`a)` 11",
+                        "`b)` 9",
+                        "`c)` 5"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "question": "What popular Mexican fast-food chain was purchased by Denny's restaurants in 1983?",
+                    "choices": [
+                        "`a)` Tomato Town",
+                        "`b)` El Doce",
+                        "`c)` El Pollo Loco"
+                    ],
+                    "correct": "c"
+                },
+                {
+                    "question": "What was the name of Subway's previous spokesman who apparently lost 245 lbs. eating only Subway products?",
+                    "choices": [
+                        "`a)` Donald Trump",
+                        "`b)` Jared Fogle",
+                        "`c)` Joan Nicaragua"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "question": "In 1997, Taco Bell launched an advertising campaign that grew to be wildly popular. What animal was the star of this campaign?",
+                    "choices": [
+                        "`a)` Talking Chicken",
+                        "`b)` Talking British Shorthair",
+                        "`c)` Talking Chihuahua"
+                    ],
+                    "correct": "c"
+                },
+                {
+                    "question": "Which fast-food franchise is credited with creating the very first, modern drive-thru window?",
+                    "choices": [
+                        "`a)` Wendy's",
+                        "`b)` Popeyes",
+                        "`c)` McDonald's"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "question": "Which fast-food restaurant still boards the slogan?",
+                    "choices": [
+                        "`a)` In-N-Out",
+                        "`b)` Burger King",
+                        "`c)` Kentucky Fried Chicken"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "question": "When was In-N-Out burger founded?",
+                    "choices": [
+                        "`a)` 1947",
+                        "`b)` 1948",
+                        "`c)` 1959"
+                    ],
+                    "correct": "b"
+                }
+			]
+		}
+	},
+	"events": {
+		"messages": [
+			"Monday Soccer Nights",
+			"Pizza Friday",
+			"Public Holiday",
+			"Peak Hours"
+		]
+	},
+	"others": {
+		"first_names": ["John", "Jack", "Percy", "Adam", "Alex", "Elias", "Eliana", "Chloe", "Olivia", "Emma", "Bill", "Joe", "Candice", "Ann", "James", "Alan", "Robert", "Alexa", "Franco", "Marco", "Sky"],
+		"last_names": ["Abramson", "Jefferson", "Gomez", "Grant", "Burke", "Stone", "Malone", "Fisher", "Ramsey", "Mitchell", "Carpenter", "Brooks", "Wells", "Johnson", "Garcia", "Jones", "Brown", "Smith", "Bush", "Miller", "Walker", "Campbell", "Hall"],
+		"fun_facts": [
+			"The United States eats 350 slices of pizza every second",
+			"The most expensive pizza in the world costs $12,000",
+			"Breakfast Pizza, 36% of Americans believe that pizza is a breakfast meal",
+			"The most popular pizza topping is pepperoni",
+			"A Pizza was Delivered in Space",
+			"Super Bowl Sunday is the biggest day of the year for pizza delivery in the U.S",
+			"Nobody Knows How the Word Pizza Originated",
+			"The Outer Edge Is Called the Cornicione",
+			"World War II helped Bring Pizza to the Masses",
+			"October Is National Pizza Month",
+			"Papa's Tomato Pies is America's Oldest Continuously Operating Pizzeria",
+			"Pizza is a 37 billion dollar industry",
+			"Cristian Dumitru of Romania ate 200 pounds of pizza in a week",
+			"There's a annual Pizza expo in Las Vegas",
+			"There is a mathematical theorem named after pizza",
+			"The Japanese put mayonnaise on their pizza",
+			"Anchovies are the least favorite pizza topping in america",
+			"The first North Korean pizzeria opened in 2009",
+			"The first frozen pizza hit the market in 1962",
+			"The Hawaiian pizza was invented in Canada",
+			"These two Famous people who got their start making and delivering pizzas.",
+			"The U.S. Military Lab recently invented a ready-to-eat pizza",
+			"There's a pizza museum in Philadelphia",
+			"For children, 44% of pizza consumption occurred at lunch",
+			"In India, the most preferred pizza topping is tofu",
+			"The risk of some cancers are reduced if pizza is consumed once a week",
+			"An average American consumes 46 pizza slices in a single year",
+			"One of the first documented Internet purchases was a pizza",
+			"The first American pizza shop was Lombardi's in New York City",
+			"There are 26,484 books on Amazon about pizza"
+		],
+		"everything": ["all", "max"]
+	},
+	"gambling": {
+		"data": {
+			"min_bet": 500
+		},
+		"slots": {
+			"spin": "<a:SlotsRolling:864048326525190154>",
+			"fruits": {
+				"grape": {
+					"emote": "<:grape:864049201750867989>",
+					"profit": 40
+				},
+				"cherry": {
+					"emote": "<:cherry:864049201809326080>",
+					"profit": 30
+				},
+				"heart": {
+					"emote": "<:heart:864049201020665876>",
+					"profit": 20
+				},
+				"meat": {
+					"emote": "<:meat:864055613057925162>",
+					"profit": 10
+				},
+				"pizza": {
+					"emote": "<:pizza:864055613552852992>",
+					"profit": 90
+				},
+				"dough": {
+					"emote": "<:dough:864055613565435934>",
+					"profit": 70
+				},
+				"cheese": {
+					"emote": "<:cheese:864059418147815424>",
+					"profit": 40
+				}
+			}
+		},
+		"coinfilp": {
+			"flip": "<a:coin:864085257322364928>",
+			"1": "<:heads:864087184256663552>",
+			"0": "<:tails:864087185194876958>"
+		}
+	},
+	"skills": {
+		"fish": {
+			"name": "Fishing",
+			"level": 1,
+			"emote": ":fishing_pole_and_fish:",
+			"items": ["squid", "crab", "tuna", "prawn"],
+			"pharses": ["FISH", "HOOKED", "CATCH", "SWING"],
+			"stats": {
+				"max_items": 2,
+				"max_quantity": 10
+			}
+		},
+		"hunt": {
+			"name": "Hunting",
+			"level": 3,
+			"emote": "<:rifle:864477277962371074>",
+			"position": [["left", "l"], ["mid", "middle", "m"], ["right", "r"]],
+			"animal": [":pig2:"],
+			"bush": [":evergreen_tree:"],
+			"items": ["beef", "ham", "egg", "chicken", "pep", "saus"],
+			"stats": {
+				"max_items": 2,
+				"max_quantity": 10
+			}
+		},
+		"harvest": {
+			"name": "Harvesting",
+			"level": 5,
+			"emote": "<:wheat:864477659509424198>",
+			"items": ["lettuce", "tomato", "onion", "bell", "eggplant", "bean", "banana", "durian"],
+			"stats": {
+				"max_items": 4,
+				"max_quantity": 20
+			}
+		}
+	},
+	"webhook": {
+		"start-logs": "https://discord.com/api/webhooks/x/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+		"guild-logs": "https://discord.com/api/webhooks/x/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+		"error-logs": "https://discord.com/api/webhooks/x/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+		"cmd-logs": "https://discord.com/api/webhooks/x/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+		"anti-cheat-logs": "https://discord.com/api/webhooks/x/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	},
+	"company": {
+		"cost": 200,
+		"upgrade": {
+			"hq": {
+				"name": "HQ Building",
+				"emote": "",
+				"info": "Increases the job limit on jobs",
+				"increase": 10,
+				"format": " space",
+				"cost": 650000,
+				"multiplier": 2
+			},
+			"secret": {
+				"name": "Secret Ingredient",
+				"emote": "",
+				"info": "Increases the overall company commands bonus",
+				"increase": 10,
+				"format": "%",
+				"cost": 500000,
+				"multiplier": 1.5
+			},
+			"exclusive": {
+				"name": "Exclusive Customer Clubs",
+				"emote": "",
+				"info": "Increases the company store's capacity",
+				"increase": 20,
+				"format": " cap",
+				"cost": 640000,
+				"multiplier": 1.5
+			}
+		},
+		"module": {
+			"delivery": {
+				"name": "Delivery Service",
+				"emote": ":beverage_box:",
+				"cost": 800000,
+				"revenue": 450,
+				"capacity": 10
+			},
+			"consulting": {
+				"name": "Business Consulting",
+				"emote": "",
+				"cost": 1440000,
+				"revenue": 550,
+				"capacity": 6
+			},
+			"advertising": {
+				"name": "Advertising Service",
+				"emote": "",
+				"cost": 2400000,
+				"revenue": 750,
+				"capacity": 12
+			},
+			"it": {
+				"name": "IT Service",
+				"emote": "",
+				"cost": 4375000,
+				"revenue": 1250,
+				"capacity": 8
+			},
+			"fitness": {
+				"name": "Fitness Training",
+				"emote": "",
+				"cost": 1600000,
+				"revenue": 650,
+				"capacity": 12
+			},
+			"catering": {
+				"name": "Catering Training",
+				"emote": "",
+				"cost": 2600000,
+				"revenue": 750,
+				"capacity": 13
+			},
+			"chef": {
+				"name": "Personal Chef Service",
+				"emote": "",
+				"cost": 10000000,
+				"revenue": 2500,
+				"capacity": 13
+			},
+			"errand": {
+				"name": "Errand Service",
+				"emote": "",
+				"cost": 25000000,
+				"revenue": 5000,
+				"capacity": 13
+			}
+		}
+	},
+	"settings": {
+		"interaction": "Toggles mini-game in work and tips"
+	},
+	"tasks": {
+		"exp": {
+			"name": "Earn {x} XP",
+			"value": [250, 500, 750],
+			"cash": 5000,
+			"exp": 500
+		},
+		"boosters": {
+			"name": "Use Any {x} Boosters",
+			"value": [3, 5],
+			"cash": 10000,
+			"exp": 500
+		},
+		"shop": {
+			"name": "Buy {x} Items From The Shop",
+			"value": [3, 5],
+			"cash": 7500,
+			"exp": 300
+		}
+	}
+}
