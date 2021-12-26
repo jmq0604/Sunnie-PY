@@ -1,4 +1,4 @@
-token = "x"
+token = "OTI0MzU0ODYwNTUwMzQwNjYx.YcdWjA.wqWJpqqWvN3Dd4rM8hhSjzRIcBQ"
 prefix = "."
 
 topgg = "x"
